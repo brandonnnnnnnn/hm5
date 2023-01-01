@@ -84,3 +84,5 @@ def str2csv(stri):
     csv['latitude'] = latitude
     csv['longitude'] = longitude.strip('\n')
     return csv
+
+jakar = '“Mumbling” Jakar Mer M/Baparan Q1 Merchant QIx1'

@@ -1,7 +1,7 @@
-Name, Frequency, Activity, NoAppearing, ChanceInLair, AL, Vision, Senses, Habitat, Diet, Organization, Climate, HP, Size, Weight, Tenacity, Intelligence, FF, Crawl, Walk, Jog, Run, Sprint, PST, MST, DST, Speed, Init, Reach, ToP, Attack, Defense, Damage, DR, Medicinal, Components, Trophy, Treasure, Edible, Other, EPV
+Name,Frequency,Activity,NoAppearing,ChanceInLair,AL,Vision,Senses,Habitat,Diet,Organization,Climate,HP,Size,Weight,Tenacity,Intelligence,FF,Crawl,Walk,Jog,Run,Sprint,PST,MST,DST,Speed,Init,Reach,ToP,Attack,Defense,Damage,DR,Medicinal,Components,Trophy,Treasure,Edible,Other,EPV
 Angel (Malakhim)
-Animated Armor, Scarce, Always Active, 1-6, 100%, non, Third Eye spell equivalency, Infravision, special, none, none, special, 7d10, M, 55, programmed, programmed, n/a, 2.5, 5, 10, 12.5, 15
-Ankylosaurus, Rare, Diurnal, 1 (90%) or mated pair (10%), 0, Non, Standard, Standard, grasslands/jungles/forests, Herbivorous, individuals, temperate to tropical jungles savannas and rainforests 
+Animated Armor,Scarce,Always Active,1-6,100%,non,Third Eye spell equivalency,Infravision,special,none,none,special,7d10,M,55,programmed,programmed,n/a,2.5,5,10,12.5,15
+Ankylosaurus,Rare,Diurnal,1 (90%) or mated pair (10%),0,Non,Standard,Standard,grasslands/jungles/forests,Herbivorous,individuals,temperate to tropical jungles savannas and rainforests 
 Apparition
 Bandy-Tailed Fighting Cock
 Banshee
