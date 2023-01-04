@@ -1,113 +1,373 @@
-Name,Frequency,Activity,NoAppearing,ChanceInLair,AL,Vision,Senses,Habitat,Diet,Organization,Climate,HP,Size,Weight,Tenacity,Intelligence,FF,Crawl,Walk,Jog,Run,Sprint,PST,MST,DST,Speed,Init,Reach,ToP,Attack,Defense,Damage,DR,Medicinal,Components,Trophy,Treasure,Edible,Other,EPV
-Angel (Malakhim)
-Animated Armor,Scarce,Always Active,1-6,100%,non,Third Eye spell equivalency,Infravision,special,none,none,special,7d10,M,55,programmed,programmed,n/a,2.5,5,10,12.5,15
-Ankylosaurus,Rare,Diurnal,1 (90%) or mated pair (10%),0,Non,Standard,Standard,grasslands/jungles/forests,Herbivorous,individuals,temperate to tropical jungles savannas and rainforests 
-Apparition
-Bandy-Tailed Fighting Cock
-Banshee
-Bat (Giant Vampire)
-Bear (Polar)
-Bear (Short-Faced)
-Capritaur
-Carrion Renderer
-Cattle
-Cave Lion
-Certosaurus
-Chasm Lurker
-Chupacabra
-Cockroach Man
-Compsagnathus
-Crab (Giant)
-Crawling Claw
-Cueyatl
-Deep Stalkers
-Demon (Bruiser)
-Demon (Greater Faustioch)
-Demon (Yadervaeld)
-Deva
-Devil (Polar)
-Dragon
-Djinn
-Drauger
-Dunter
-Elasmotherium
-Eoten
-Fey DragonFianna
-Flailing Snail (Gigantic)
-Fly (Giant)
-Frore Wolf
-Giant (Fire)
-Gargoyle (Elder)
-Glowworm
-Grimalkin
-Hellhound
-Helvetian
-Hioppopotamus
-Ifreet
-Jagrom
-Kryzaar
-Larvae
-Leucrotta
-Manticore
-Meadow Spider
-Mimikos
-Modde
-Moddepille
-Mold
-Moose
-Morlock
-Muckmen
-Muscheron
-Naga (Phaya)
-Naga (Sentinel)
-Nightmare
-Okrillamari
-Orgron
-Peryton
-Piranha
-Pit Howler
-Plateosaur
-Quazit
-Rat (Massive)
-Rat (Oliphant)
-Reef Terror
-Rooftop Prowler
-Sailback Lizard
-Saw-Backed Lunger
-Scarecrow
-Scowl
-Sharjani
-Shark
-Skeleton (Multifarious)
-Skiver
-Slavering Gouger
-Slough
-Slushie
-Snappers
-Snogre
-Snow Orc
-Snow Snake
-Spider (Shoagg)
-Spiders (Trapdoor)
-Ssishnisska
-Stegosaur
-Stercus
-Stony Ensnarer
-Sturm Badger
-Sundew (Man-Eating)
-Syntaur
-Termite (Giant Exploading)
-Toffee Bugs
-Triceretops
-Unicorn
-Valkyrie
-Velociraptor
-Vermus
-Virunga Ape
-Wandering Mucor
-Wisp (Subterranean)
-Wolverine
-Worm (Great Spiny)
-Wrengenan
-Za'kaarii
-Za'kaarii Shepherd
+Name,Frequency,Activity,NoAppearing,ChanceInLair,AL,Vision,Senses,Habitat,Diet,Organization,Climate,HP,Size,Weight,Tenacity,Intelligence,baseFF,Crawl,Walk,Jog,Run,Sprint,PST,MST,DST,favWeapons,favArmor,favShield,Init,Reach,ToP,Attack,Defense,Damage,natDR,Medicinal,Components,Trophy,Treasure,Edible,Other,gestation,weaning,child mortality,maturity,lifespan,religion,EPV
+Apparition,0
+Human Sedentary,5
+Screecher,commonplace,any,2-8,100,non,none,movement;light;heat;touch,dark caves;valleys;deep forests,carnivorous,none,warm to tropical lowlands;subterranean,10+3d8,5
+Compsognathus,scarce,nocturnal,1-30,0,non,low light,std,lagoons;beaches;reefs;shores;slightly inland,carnivorous,pack,subtropical to tropical wilderness,1d6+5,10
+Muscheron Pinhead,sporadic,nocturnal,4-24,90,N,extreme low light,vibration;air motion,dark and damp,detrivore,colony,subterranean;forests;jungles;wetlands,10+d8,s,20,steady,low,,2.5,2.5,5,10,10,8,8,1,short bone spear,,,always 1,-1,,0,-2,,0,ingestion can alleviate quirks or flaws related to the spores of the elder,10% SP reduction for spells related to the spores of the elder,,from prior victims under colony,yes,nil,,,,,,10
+Scowl,common,nocturnal;crepuscular,1d4p/50%;2d12p/50%,10/night;75/day,non,low light,std,hollow trees;caves;trees;attics,herbivorous,flock,all save polar,d6+5,t,4,steady,10
+Weasel,10
+Giant Beetle,commonplace,crepuscular,1-20,0,non,std,vibrations/30ft,forests;fields,omnivorous,nest,temperate;tropical,10+d8,11
+Giant Boring Beetle,11
+Giant Rat,12
+Giant Centipede,14
+Moddepille 1 month,14
+Kobold,frequent,crepuscular,2-8(hunting);3d4p+8/warband;20d20p/clan,35,LE,low light,excellent smell;excellent hearing;motion detection;limited colors;taste salts only,burrows;caves;trees;buildings,omnivorous,pack,any save arctic,13+d4,S,40-50,nervous,slow,-1/0,1.25,2.5,5,7.5,10,2,1,2,dagger/fav;short sword/fav;club;short spear;hand axe;small morning star;short bow;javelin;light crossbow,animal hide,small,3,-1,4,2,4,-3,1,nil,nil,none worthy of a hero,3d8p trade coins; various junk in lair,yes but tastes like gamey dog meat,nil,140 days,16 weeks,40%,6 years,,Overlord/free;Corruptor/slaves;Flaymaster/slaves;Dark One/rarely,17
+Halfling,20
+Human Merchant,20
+Giant Wasp,20
+Modde,20
+Pixie-Fairy,20
+Reef Terror,20
+Tarantubat,20
+Dog,22
+Goblin,22
+Blue Shark,24
+Moddepille 2 months,24
+Big Spider,25
+Giant Fire Beetle,25
+Human Laborer,25
+Megapiranha,28
+Camel,30
+Cow,30
+Cueyatl,30
+Human Man-at-arms,ubiquitous,by schedule,1-3/watch;3-30/patrol;50+/fortress,75,any,std,std,any,omnivorous,squads;companies;battles;legions,any,24+1d8,m,180,average,-3/-2,2.5,5,10,15,20,0,0,0,longsword,studded,medium,4,0,7,1,-2,1,0,nil,nil,nil,none if near brothels taverns or gambling houses,cannibalism,nil,9 months,30
+Kobold Pack leader,30
+Skitter-rat,30
+Vermus,30
+Giant Fly,32
+Goblin Sergeant,32
+Massive Rat,33
+Brigand,34
+Orc,34
+Venomous Ssishnisska,35
+Lizard Man Warrior Leader,36
+Muscheron Adult,36
+Orc Leader,37
+Giant Bombardier Beetle,40
+Giant Worker Ant,40
+Gnome,42
+Hammerhead Shark,44
+Large Spider,45
+Lizard man,45
+Serpentine Lizard Man Veninatus,45
+Arakian Worker,48
+Human-like Ssishnisska,50
+Kobold Alpha Male,50
+Leech Man,50
+Orc Warband Leader,50
+Snapper,54
+Goblin Captain,55
+Serpentine Lizard Man Boidae,55
+Giant Exploding Termite,58
+Troglodyte,60
+Moddepille 3 months,64
+Morlock,65
+Snow Orc,65
+Ssishnisska Constrictor,65
+Berserker,67
+Deep Stalker Drone,67
+Giant Tick,67
+Hobgoblin,67
+Lizard Man Warband Leader,67
+Merfolk,67
+Short Fin Mako,67
+Skeleton,67
+Strix,67
+Grimalkin,72
+Giant Vampire Bat,75
+Bugbear Youth,80
+Hobgoblin Sergeant,80
+Subterranean Whisp,80
+Dwarf,84
+Giant Weasel,84
+Guard Dog,84
+Rattlesnake,84
+Wolf,84
+Black Orc Leader,85
+Crawling Claw,85
+Scarecrow,86
+Goblin Sub-chief,90
+3-limb Multifarious Skeleton,93
+Oliphant Rat,95
+Troglodyte Leader,95
+Larvae,99
+Animal Skeleton,100
+Boa Constrictor,100
+Brownie,100
+Elf,100
+Giant Soldier Ant,100
+Leprechaun,100
+Pterosaur,100
+Very Large Spider,100
+War Dog,100
+Zombie,100
+Bull Shark,112
+Bugbear Female,115
+4-limb Multifarious Skeleton,117
+Muck Man,120
+Hobgoblin Lieutenant,121
+Dire Wolf,122
+Gnole,122
+Lesser Orkin Wardawg,122
+Black Orc Warband Leader,125
+Orc Sub-Chief,125
+Asp,133
+Least Sharjani,133
+Troglodyte Warband Leader,133
+5-limb Multifarious Skeleton,140
+Grel,140
+Velociraptor Minorus,140
+Few Piranha,150
+Kobold Alpha-Plus Male,150
+Lizard Man Sub-Chief,150
+Orgron,150
+Za'kaarii,150
+6-limb Multifarious Skeleton,158
+Gnole Leader,160
+Black Orc Sub-Chief,165
+Sailback Lizard,165
+Troglodyte Sub-Chief,165
+Capritaur,170
+Goblin Chieftain,170
+Orc Chieftain,170
+Bugbear,175
+Deep Stalker Hunter,175
+Giant Goat,175
+Moose,175
+Brain-eating zombie,180
+Toffee Bug Swarm,180
+Hobgoblin Captain,188
+Flesh-eating Slime,200
+Lizard Man Chief,200
+Huge Spider,200
+Massive Centipede,200
+Rattlebone Mummy,200
+Wolverine,200
+Gnole Praetorian,215
+Owlbeast Chick,225
+Monster Skeleton,230
+Gouger,240
+Boar,242
+Giant Scorpion,242
+Imp,242
+Lesser Sharjani,242
+Ogre,242
+Satyr,242
+Average Piranha,250
+Dryad,250
+Giant Amoeba,250
+Slushie,250
+Wandering Mucor,260
+Monster Zombie,266
+Quazit,270
+Slavering Gorger,270
+Giant Toad,275
+Haunt,275
+Bugbear leader,280
+Ghoul,290
+Aarnz Hound,300
+Arakian Warrior,300
+Hobgoblin Kruk,300
+Velociraptor Majorus,300
+Centaur,325
+Corrosive Ooze,325
+Peryton,325
+Muscheron Elder,330
+Skiver,330
+Dunter,340
+Bull,350
+Fantom Dog,350
+Greater Orkin Wardawg,350
+Many Piranha,350
+Mountain Lion,350
+Syntaur,350
+Warg,350
+Wererat,350
+Saw-Backed Lunger,368
+Black Orc Chieftain,375
+Wooly Cheetah,375
+Plateosaur,380
+Catoblepas,388
+Snow Snake,395
+Giant Eagle,400
+Lesser Crocadile,400
+Black Bear,417
+Gargoyle,417
+Gigantic Spider,417
+Shadow,417
+Troglodyte Chief,417
+Yeti,417
+Giant Crab,422
+Bugbear Chief,425
+Draugr,425
+Ghast,425
+Pit Howler,425
+Rooftop Prowler,425
+Snogre,435
+Giant Subterranean Lizard,450
+Gorilla,450
+Toffee Bug Queen,468
+4-headed aquatic hydra,492
+4-headed Hydra,492
+Animating Spirit,492
+Lion,492
+Hippogriff,492
+Cockatrice,500
+Giant Boar,500
+Grevan,500
+Wrenganan,517
+Mimikos,520
+Tentaslug,533
+Za'kaarii Shepherd,540
+Kryzaar,550
+Nightmare,560
+Chupacabra age .5,575
+Greater Sharjani,575
+Harpy,575
+Rusalka,575
+Siren,575
+Werewolf,575
+Frore Wolf,600
+Hell Hound,600
+Carrion Renderer,625
+Will-o-the-wisp,625
+Chupacabra age 1,650
+Giant Bandy Tailed Fighting Cock,650
+Leucrotta,650
+5-headed aquatic hydra,675
+5-headed hydra,675
+Cockroach Man,675
+Hag,675
+Minotaur,675
+Pegasus,675
+Arakian Brood Watcher,700
+Glowworm,700
+Meadow Spider,700
+Shoagg Runner,700
+Virunga Ape,720
+Chupacabra age 2,725
+Xullith,725
+Djinn,750
+Elasmotherium,750
+Hioppopotamus,750
+Stercus,750
+Urochs Bull,775
+Animated Armor,Scarce,Always Active,1-6,100%,non,Third Eye spell equivalency,Infravision,special,none,none,special,7d10,M,55,programmed,programmed,n/a,2.5,5,10,12.5,15,750
+Malakhim Angel,777
+Barrow-Wight,792
+Brown Bear,792
+Banshee,800
+Bruiser Demon,800
+Chupacabra age 3,800
+Giant Poisonous Toad,800
+Slough,800
+Owlbeast,810
+Tetzylwyrm,815
+Blood Mummmy,825
+Basilisk,850
+Eoten,850
+Chupacabra age 4,875
+Fey Dragon,900
+Unicorn,900
+Deva,901
+6-headed aquatic hydra,925
+6-headed hydra,925
+Anaxar,925
+Great Horned Owlbeast,925
+Killer Ape,925
+Lord Sharjani,925
+Massive Spider,925
+Sturm-wolf,925
+Tiger,925
+Troll,925
+Wyvern,925
+Cave Lion,950
+Ceratosaurus,950
+Ifrit,950
+King Raptor,950
+Valkyrie,960
+Yadervaeld Demon,966
+Servitor Mummy,975
+Arakian Queen,1000
+Changeling,1000
+Elephant,1000
+Great Spiny Worm,1000
+Helvetian,1000
+Okrillamari,1000
+Chasm Lurker,1020
+Megalosaurus,1067
+Griffyn,1075
+Spectre,1075
+Chimera,1100
+Manticore,1100
+Smilodon,1100
+Sturm Badger,1100
+Greater Crocadile,1150
+Stegosaur,1150
+Great White Shark,1200
+Lindwyrm,1200
+Medusa,1200
+Phaya Naga,1200
+7-headed aquatic hydra,1242
+7-headed hydra,1242
+Lesser Ettin,1242
+Hioppopotamus Gorgops,1250
+Man-Eating Sundew,1250
+Gigantic Flailing Snail,1275
+Stony Ensnarer,1300
+Elder Gargoyle,1300
+Devil,1313
+Jagrom,1350
+Gorgon,1400
+Polar Bear,1400
+Triceratops,1400
+Ankylosaurus,Rare,Diurnal,1 (90%) or mated pair (10%),0,Non,Standard,Standard,grasslands/jungles/forests,Herbivorous,individuals,temperate to tropical jungles savannas and rainforests,1425
+Criophinx,1425
+Flesh Golem,1425
+Grizzly Bear,1425
+Hieracosphinx,1425
+Hill Giant,1425
+Mummy,1425
+Rakshasa,1425
+Water Elemental,1425
+Air Elemental,1500
+Gynosphinx,1500
+Sentinel Naga,1500
+Swamp Death,1500
+Fire Giant,1600
+Androsphinx,1850
+8-headed aquatic hydra,2075
+8-headed hydra,1625
+Wyrm,1700
+Fire Elemental,1750
+Hoar Frost Giant,1750
+Ent,1800
+Cave Bear,1842
+Wraith,1842
+Fianna,1850
+Noble Mummy,1850
+Earth Elemental,1900
+Short-faced Bear,2000
+Titanic Worm,2000
+Tyrannosaurus Rex,2000
+9-headed aquatic hydra,2075
+9-headed hydra,2075
+Gargantuan Spider,2075
+Vampire,2275
+Cyclops,2300
+Faustioch Demon,2300
+Royal Mummy,2300
+Roc,2500
+10-headed aquatic hydra,2592
+10-headed hydra,2592
+Polar Devil,2700
+Clay Golem,3000
+11-headed aquatic hydra,3175
+11-headed hydra,3175
+Drake,3300
+12-headed aquatic hydra,3825
+12-headed hydra,3825
+Megalodon Shark,6600
+Dragon,11459
+Deep Stalker Queen,unspecified
+Trapdoor spider,as spider

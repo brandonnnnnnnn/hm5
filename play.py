@@ -1,6 +1,8 @@
 from random import *
 import csv
+# import pandas as pd
 from statistics import NormalDist
+import itertools
 
 def roll(n):
     result = randint(1, n)
@@ -9,11 +11,11 @@ def roll(n):
 
 def rolp(n):
     result = 0
-    while True:
-        p = roll(n)
-        result += p
-        if p != n:
-            break
+    curr = roll(n)
+    while curr == n:
+        result += curr - 1
+        curr = roll(n)
+    result += curr
     return result
 
 def randstat(mean, sd):
@@ -85,4 +87,98 @@ def str2csv(stri):
     csv['longitude'] = longitude.strip('\n')
     return csv
 
-jakar = '“Mumbling” Jakar Mer M/Baparan Q1 Merchant QIx1'
+def charinfo(lnum):
+    with open('chars.csv') as f:
+        return next(itertools.islice(csv.DictReader(f), lnum - 2, None))
+
+def towninfo(lnum):
+    with open('towns.csv') as f:
+        return next(itertools.islice(csv.DictReader(f),lnum-2,None))
+
+def info(lnum):
+    with open('info.csv') as f:
+        return next(itertools.islice(csv.DictReader(f),lnum-2,None))
+
+def mobinfo(lnum):
+    with open('mobs.csv') as f:
+        return next(itertools.islice(csv.DictReader(f),lnum-2,None))
+
+def fightinfo(lnum):
+    with open('battle.csv') as f:
+        return next(itertools.islice(csv.DictReader(f),lnum-2,None))
+
+def arena():
+    clock = 0
+    spawn(33)
+    alive = True
+    playerInit = input("Player init roll (d12): ")
+    enemy = 4
+    while alive:
+        if clock % 30 == 0:
+            enemy += rolp(8) - 2
+            spawn(enemy)
+            # while True:
+            #     try:
+            #         spawn(enemy)
+            #         print(mobinfo(enemy)['Name'],"has joined the battle!")
+            #         break
+            #     except:
+            #         input("Info missing for "+mobinfo(enemy)+'. Please enter info and try again')
+        clock += 1
+        print("count:",clock)
+        action = input("Player's action (enter=continue, f=fight, m=move, end=end simulation): ")
+        if action == 'm':
+            print('current position:',fightinfo(2)['x'],fightinfo(2)['y'])
+        if action == 'end':
+            print('Good game!')
+            with open('battle.csv','r+') as f:
+                f.readline() # save header
+                f.truncate(f.tell()) # clear all combatants
+            return
+
+def spawn(mobid):
+    info = mobinfo(mobid)
+    char = {}
+    char['type'] = info['Name']
+    while True:
+        try:
+            if info['HP'] == None: raise Exception
+            break
+        except:
+            print("HP info missing for "+char['type']+'. Please enter info and try again')
+            input("Press enter when ready: ")
+            info = mobinfo(mobid)
+    char['maxhp'] = str2roll(info['HP'])
+    print(char['maxhp'])
+    char['hp'] = char['maxhp']
+    char['natreach'] = info['Reach']
+    x=0
+    y=0
+    while (x not in [1,8]) and (y not in [1,16]):    
+        x = randint(1,8)
+        y = randint(1,16)
+    char['x'] = x
+    char['y'] = y
+    char['momentum'] = 1
+    print(char)
+    print(info['Name'],"spawned at x:",x,'y:',y,'!')
+    fields = ['type','maxhp','hp','wounds','armor','natreach','lh','rh','x','y','momentum']
+    w = open('battle.csv','a',newline='')
+    writer = csv.DictWriter(w,fields)
+    writer.writerow(char)
+
+def str2roll(string):
+    print('hit dice:',string)
+    parts = string.split('+')
+    total = 0
+    for part in parts:
+        if 'd' not in part: total += int(part)
+        else:
+            if part[0] == 'd': 
+                total += roll(int(part[1:]))
+                continue
+            comps = part.split('d')
+            for i in range(int(comps[0])):
+                if 'p' not in comps[1]:
+                    total += roll(int(comps[1]))
+    return total

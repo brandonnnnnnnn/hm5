@@ -1,0 +1,6 @@
+name,cost,dr,def,init,speed,mvt,type,weight,donTime
+none,0,0,0,-1,0,,,0,0
+thick robes,5cp,1,-1,0,0,,,5,4d8p/2d8p
+animal hide,,1,0,0,0,,light,,d6p
+leather,6sp,2,-2,0,0,,light,15,4d8p/2d8p
+plate mail,500sp,7,-5,2,2,.5,heavy,55,36d12p/12d12p

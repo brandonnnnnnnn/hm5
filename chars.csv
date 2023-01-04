@@ -1,3 +1,11 @@
-name,sex,race,class,residence,occupation,info,frequents,associates,factions,height,weight,str,int,wis,dex,con,lks,cha,skills,proficiencies,talents,hp,mother,father,appearance,personality,bdate,possesions,spells
-"Mumblin" Jakar Mer,m,baparan,
-Relemir Tasipo,?,?
+name,sex,race,class,residence,occupation,info,frequents,associates,factions,height,weight,handedness,str,int,wis,dex,con,lks,cha,skills,proficiencies,talents,hp,mother,father,appearance,personality,lifespan,possesions,thirst,hunger,fatigue,spells
+Shanko-u,m,dejy,commoner
+Thak-u,
+"Mumblin" Jakar Mer-u,m,baparan,commoner,,merchant.567Q1,567QIx1,567Q18,10,none
+Kramidar Temilon-u,m,baparan,commoner,,merchant.567Q1,567GIx1.QIx2,,,,
+Ganodira Temilon-u,F,baparan,
+Ganitak-u,m,,,keep prefect
+Reyifor-u,m,,,earl
+-u,,black bear
+Stosh Fortron-u,m,,cleric3
+Kanatin-u
