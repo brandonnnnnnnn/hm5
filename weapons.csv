@@ -1,0 +1,4 @@
+name,minStr,skill,dmg,shieldDmg,speed,size,reach,type,cost,weight
+dagger,4,low,2d4p,0,7/5,s,1ft,piercing,2sp,1
+short spear,
+short bone spear,,,d6p,,,m,
