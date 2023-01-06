@@ -1,1 +1,6 @@
 type,maxhp,hp,wounds,armor,natreach,lh,rh,x,y,momentum
+Human Man-at-arms,29,29,,studded,0,medium shield,longsword,2,16,stand
+Giant Beetle,15,15,,,,,,8,3,stand
+Human Man-at-arms,26,26,,studded,0,medium shield,longsword,4,1,stand
+Giant Beetle,17,17,,,,,,8,11,stand
+Human Man-at-arms,28,28,,studded,0,medium shield,longsword,1,10,stand

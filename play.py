@@ -129,6 +129,7 @@ def arena():
         action = input("Player's action (enter=continue, f=fight, m=move, end=end simulation): ")
         if action == 'm':
             print('current position:',fightinfo(2)['x'],fightinfo(2)['y'])
+        if action == 'f': attack(2)
         if action == 'end':
             print('Good game!')
             with open('battle.csv','r+') as f:
@@ -151,7 +152,12 @@ def spawn(mobid):
     char['maxhp'] = str2roll(info['HP'])
     print(char['maxhp'])
     char['hp'] = char['maxhp']
+    char['armor'] = info['favArmor']
     char['natreach'] = info['Reach']
+    if info['favShield'] == None: char['lh'] = ''
+    else: char['lh'] = info['favShield'] + ' shield'
+    if info['favWeapons'] == None: char['rh'] = ''
+    else: char['rh'] = info['favWeapons'].split('/')[0]
     x=0
     y=0
     while (x not in [1,8]) and (y not in [1,16]):    
@@ -159,7 +165,7 @@ def spawn(mobid):
         y = randint(1,16)
     char['x'] = x
     char['y'] = y
-    char['momentum'] = 1
+    char['momentum'] = 'stand'
     print(char)
     print(info['Name'],"spawned at x:",x,'y:',y,'!')
     fields = ['type','maxhp','hp','wounds','armor','natreach','lh','rh','x','y','momentum']
@@ -182,3 +188,20 @@ def str2roll(string):
                 if 'p' not in comps[1]:
                     total += roll(int(comps[1]))
     return total
+
+def attack(attid):
+    attacker = fightinfo(attid)
+    print("attacker:",attacker)
+    print('Reachable targets:')
+    i = 2
+    while True:
+        if i == attid:
+            i += 1
+            continue
+        try:
+            if fightinfo(i)['x'] in range(int(attacker['x']) - 1,int(attacker['x'])+1) and fightinfo(i)['y'] in range((attacker['y'])-1,int(attacker['y'])+1):
+                print('i', "is attackable!")
+            i += 1
+        except:
+            break
+    print('attack concluded')
